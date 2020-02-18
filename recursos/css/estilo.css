@@ -1,0 +1,139 @@
+* {
+    font-family: 'Geo', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #20252d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding bottom: 10px;
+    z-index: 1;
+    box-shadow: 0px 5px 8px -4px rgba(79,13,79,1);
+}
+
+.cabecalho > h1{
+    margin: 0px;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.logo {
+	position: absolute;
+	width: 85px;
+	top: 17px;
+    left: 12%;
+}
+
+.cabecalho > h2{
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.principal {
+    grid-area: principal;
+    /*height: calc(100vh - 120px); */
+    background-color: #2b2d2f;
+    padding: 20px;
+}
+
+.conteudo {
+    position: relative;
+    height: 100%; 
+    /*overflow-y: scroll; */ 
+    background-color: #2b2d2f;
+    padding:20px;
+}
+
+.conteudo > h3 {
+    color: #fff;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #20252d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: #fff;
+    box-shadow: 0px -5px 8px -4px rgba(79,13,79,1);
+
+    /*position: sticky;
+    bottom: 0px; */
+}
+.rodape > h4 {
+    color: #dc143c;
+    margin: 3px;
+}
+
+.modulos {
+    background-color: #2b2d2f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.modulo > h3 {
+    background-color: #1867c0;
+    text-align: center;
+    color: #cfcfcf;
+    margin: 0px;
+    columns: #fff;
+    font-weight: 300;
+    font-size: 1.9rem;
+    padding: 10px 20px;
+    
+}
+
+.modulo > ul {
+    margin: 0px;
+    background-color: #4d5157;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    
+}
+
+.modulo > ul > li {
+padding: 10px;
+font-size: 1.3rem;
+cursor: pointer;
+}
+
+.modulo > ul > li > a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+}
+.modulo > ul > li:hover {
+    background-color: #00bfaa;
+}
+
+.modulo.cor-card { border:2px solid #20252d; }
+.modulo.cor-card > h3 {background-color: #20252d; }
