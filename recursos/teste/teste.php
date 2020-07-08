@@ -1,4 +1,4 @@
-<div class="titulo">Chora mais burguesia safada</div>
+<div class="titulo"> Linha título de exemplo dashboad </div>
 
 <?php 
     echo("lorem ipsum")

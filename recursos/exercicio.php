@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Geo:400,400i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/exercicio.css">
@@ -9,13 +10,14 @@
 </head>
 <body class="exercicio">
     <header class="cabecalho">
+    <img class="logo" src="/php-dashboard/recursos/image/logo.png">
         <h1>PHP - Dashboard documentation</h1>
         <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
         <a href=<?= "teste/teste.php" ?>
             class="verde">Sem formatação</a>
-        <a href="/index.php" class="vermelha"> Voltar</a>
+        <a href="/php-dashboard/index.php" class="vermelha"> Voltar</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
